@@ -1,61 +1,26 @@
-<!--
 <!DOCTYPE html>
 <html>
 <head>
-  <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons' rel="stylesheet">
-  <link href="https://unpkg.com/vuetify/dist/vuetify.min.css" rel="stylesheet">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
-</head>
-<body>
-  <div id="app">
-    <v-app>
-      <v-toolbar dense>
-        <v-toolbar-title>BEODZET</v-toolbar-title>
-        <v-spacer></v-spacer>
-        <v-menu offset-y>
-          <v-toolbar-side-icon class="hidden-md-and-up" slot="activator"></v-toolbar-side-icon>
-          <v-list>
-            <v-list-tile v-for="item in items" :key="item.title" @click="">
-              <v-list-tile-title>{{ item.title }}</v-list-tile-title>
-            </v-list-tile>
-          </v-list>
-        </v-menu>
-        <v-toolbar-items class="hidden-sm-and-down">
-          <v-btn flat v-for="item in items" :key="item.title">{{ item.title }}</v-btn>
-        </v-toolbar-items>
-      </v-toolbar>
-
-      <v-parallax src="image/Sveti_Sava_Crkva.jpg">
-        <v-layout column align-center justify-center>
-          <h1 class="white&#45;&#45;text">POTRCKO BEODZET</h1>
-          <h4 class="white&#45;&#45;text">SAD I ODMAH</h4>
-          <h4 class="white&#45;&#45;text">U roku od sat vremena za vas dostavljamo poslovnu dokumentaciju, hranu iz restorana, lekove, poklone...</h4>
-        </v-layout>
-      </v-parallax>
-    </v-app>
-  </div>
- 
-  <script src="https://unpkg.com/vue/dist/vue.js"></script>
-  <script src="https://unpkg.com/vuetify/dist/vuetify.js"></script>
-  <script src="vue.js"></script>
-</body>
-</html>-->
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Vuetify Parallax Starter</title>
+  <title>Potrčko Beožet</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons' rel="stylesheet">
   <link href="https://unpkg.com/vuetify/dist/vuetify.min.css" rel="stylesheet">
-
+  <link href="css/custom.css" rel="stylesheet">
+  <meta name="description" content="Potrčko Beožet, najbrža dostava u gradu">
+  <meta name="keywords" content="Potrčko, potrčko, Potrcko, potrcko, Boegrad,
+  beograd, Dostava, dostava, Dostava Beograd, dostava beograd, beodzet, beodzet beograd, beodzet beograd">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <style>
-    .hover-custom{
-      background-color: #48484878;
-      padding: 10px;
-    }
-  </style>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112388424-1"></script>
+  <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-112388424-1');
+  </script>
 </head>
 <body>
 <div id="app">
@@ -74,16 +39,16 @@
           >
             <!--<img src="assets/vuetify.png" alt="Vuetify.js" height="200">-->
             <div class="hover-custom">
-              <h1 class="white--text mb-2 display-1 text-xs-center">POTRCKO BEODZET</h1>
+              <h1 class="white--text mb-2 display-1 text-xs-center custom-headline">POTRČKO BEODŽET</h1>
               <div class="subheading mb-3 text-xs-center">SAD I ODMAH</div>
               <div class="subheading mb-3 text-xs-center">U roku od sat vremena za vas dostavljamo poslovnu dokumentaciju, hranu iz restorana, lekove, poklone...</h4></div>
             </div>
             <v-btn
-                    class="blue lighten-2 mt-5"
+                    class="blue lighten-2 mt-5 my-2 number"
                     dark
                     large
             >
-              (+381)063/89-56-622
+              063/89-56-622
             </v-btn>
           </v-layout>
         </v-parallax>
@@ -98,9 +63,9 @@
         >
           <v-flex xs12 sm4 class="my-3">
             <div class="text-xs-center">
-              <h2 class="headline">Zasto Beodzet?</h2>
+              <h2 class="headline">Zašto Beodžet?</h2>
               <span class="subheading">
-                Zato sto imamo najbolju uslugu u gradu!
+                Zato što imamo najbolju uslugu u gradu!
               </span>
             </div>
           </v-flex>
@@ -116,9 +81,9 @@
                       <div class="headline text-xs-center">SIGURNO</div>
                     </v-card-title>
                     <v-card-text>
-                      Oslobodite se brige. Svi paketi prihvaćeni od strane Dzeta-a
+                      Svi paketi prihvaćeni od strane Džeta-a
                       su osigurani i naši vozači podvrgavaju intenzivnom treningu kako bi
-                      bili sigurni da su vaše pošiljke sigurno dostavljene *.
+                      bili sigurni da su vaše pošiljke sigurno dostavljene.
                     </v-card-text>
                   </v-card>
                 </v-flex>
@@ -130,8 +95,8 @@
                     <v-card-title primary-title class="layout justify-center">
                       <div class="headline">POGODNOST</div>
                     </v-card-title>
-                    <v-card-text>
-                      Ne brinite ukoliko niste kod kuce, posiljku donosimo do vas
+                    <v-card-text style="height: 96px;">
+                      Ne brinite, ukoliko niste kod kuće, pošiljku donosimo lično do vas
                     </v-card-text>
                   </v-card>
                 </v-flex>
@@ -144,8 +109,8 @@
                       <div class="headline text-xs-center">LAKO</div>
                     </v-card-title>
                     <v-card-text>
-                      Jednim pozivom sms-om ili viber porukom kazete nam sta,
-                      odakle zelite I gde da donesemo, ostalo je sve nasa briga
+                      Jednim pozivom sms-om ili viber porukom kažete nam šta,
+                      odakle želite i gde da donesemo, ostalo je sve naša briga
                     </v-card-text>
                   </v-card>
                 </v-flex>
@@ -158,7 +123,7 @@
       <section>
         <v-parallax src="image/services-image2.jpg" height="320">
           <v-layout column align-center justify-center>
-            <div class="headline white--text mb-3 text-xs-center">Pratite nas i na drustvenim mrezama</div>
+            <div class="headline white--text mb-3 text-xs-center">Pratite nas i na društvenim mrežama</div>
             <em>butite informisani</em>
             <span>
               <v-layout row>
@@ -185,11 +150,11 @@
                   <div class="headline">O nama</div>
                 </v-card-title>
                 <v-card-text>
-                  Beodzet potrcko je kurirska sluzba u beogradu koja obavlja dostave na
+                  Beodžet potrčko je kurirska služba u beogradu koja obavlja dostave na
                   celoj teritoriji grada po principu odmah za odmah, sve sto vi niste u
-                  mogucnosti a sto ne morate licno da obavljate. Nase usluge naplacujemo
+                  mogucnosti a što ne morate licno da obavljate. Nase usluge naplacujemo
                   po zonama grada koje smo mi napravili radi stvaranja adekvatnog cenovnika
-                  koji zadovoljava svacije potrebe I medju najpovoljnijima smo u gradu.
+                  koji zadovoljava svacije potrebe i medju najpovoljnijima smo u gradu.
                   Uverite se u nas kvalitet!
                 </v-card-text>
               </v-card>
