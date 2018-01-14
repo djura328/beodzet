@@ -50,6 +50,12 @@
   <link href="https://unpkg.com/vuetify/dist/vuetify.min.css" rel="stylesheet">
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    .hover-custom{
+      background-color: #48484878;
+      padding: 10px;
+    }
+  </style>
 </head>
 <body>
 <div id="app">
@@ -67,16 +73,17 @@
                   class="white--text"
           >
             <!--<img src="assets/vuetify.png" alt="Vuetify.js" height="200">-->
-            <h1 class="white--text mb-2 display-1 text-xs-center">POTRCKO BEODZET</h1>
-            <div class="subheading mb-3 text-xs-center">SAD I ODMAH</div>
-            <div class="subheading mb-3 text-xs-center">U roku od sat vremena za vas dostavljamo poslovnu dokumentaciju, hranu iz restorana, lekove, poklone...</h4></div>
+            <div class="hover-custom">
+              <h1 class="white--text mb-2 display-1 text-xs-center">POTRCKO BEODZET</h1>
+              <div class="subheading mb-3 text-xs-center">SAD I ODMAH</div>
+              <div class="subheading mb-3 text-xs-center">U roku od sat vremena za vas dostavljamo poslovnu dokumentaciju, hranu iz restorana, lekove, poklone...</h4></div>
+            </div>
             <v-btn
                     class="blue lighten-2 mt-5"
                     dark
                     large
-                    href="/pre-made-themes"
             >
-              Get Started
+              (+381)063/89-56-622
             </v-btn>
           </v-layout>
         </v-parallax>
@@ -93,7 +100,7 @@
             <div class="text-xs-center">
               <h2 class="headline">Zasto Beodzet?</h2>
               <span class="subheading">
-                Porucite posiljku jenim pozivom
+                Zato sto imamo najbolju uslugu u gradu!
               </span>
             </div>
           </v-flex>
@@ -134,12 +141,11 @@
                       <v-icon x-large class="blue--text text--lighten-2">build</v-icon>
                     </v-card-text>
                     <v-card-title primary-title class="layout justify-center">
-                      <div class="headline text-xs-center">BRZO</div>
+                      <div class="headline text-xs-center">LAKO</div>
                     </v-card-title>
                     <v-card-text>
-                      Ne morate vise da cekate posiljku
-                      Dzet on-demand, što znači da će vam se paket odmah
-                      pokupiti i dostaviti direktno svom primaocu.
+                      Jednim pozivom sms-om ili viber porukom kazete nam sta,
+                      odakle zelite I gde da donesemo, ostalo je sve nasa briga
                     </v-card-text>
                   </v-card>
                 </v-flex>
@@ -170,29 +176,31 @@
           </v-layout>
         </v-parallax>
       </section>
-      <i class="fa fa-facebook"></i>
       <section>
         <v-container grid-list-xl>
           <v-layout row wrap justify-center class="my-5">
             <v-flex xs12 sm4>
               <v-card class="elevation-0 transparent">
                 <v-card-title primary-title class="layout justify-center">
-                  <div class="headline">Company info</div>
+                  <div class="headline">O nama</div>
                 </v-card-title>
                 <v-card-text>
-                  Cras facilisis mi vitae nunc lobortis pharetra. Nulla volutpat tincidunt ornare.
-                  Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
-                  Nullam in aliquet odio. Aliquam eu est vitae tellus bibendum tincidunt. Suspendisse potenti.
+                  Beodzet potrcko je kurirska sluzba u beogradu koja obavlja dostave na
+                  celoj teritoriji grada po principu odmah za odmah, sve sto vi niste u
+                  mogucnosti a sto ne morate licno da obavljate. Nase usluge naplacujemo
+                  po zonama grada koje smo mi napravili radi stvaranja adekvatnog cenovnika
+                  koji zadovoljava svacije potrebe I medju najpovoljnijima smo u gradu.
+                  Uverite se u nas kvalitet!
                 </v-card-text>
               </v-card>
             </v-flex>
             <v-flex xs12 sm4 offset-sm1>
               <v-card class="elevation-0 transparent">
                 <v-card-title primary-title class="layout justify-center">
-                  <div class="headline">Contact us</div>
+                  <div class="headline">Kontakt</div>
                 </v-card-title>
                 <v-card-text>
-                  Cras facilisis mi vitae nunc lobortis pharetra. Nulla volutpat tincidunt ornare.
+                  <!--Cras facilisis mi vitae nunc lobortis pharetra. Nulla volutpat tincidunt ornare.-->
                 </v-card-text>
                 <v-list class="transparent">
                   <v-list-tile>
@@ -200,7 +208,7 @@
                       <v-icon class="blue--text text--lighten-2">phone</v-icon>
                     </v-list-tile-action>
                     <v-list-tile-content>
-                      <v-list-tile-title>(+381)063/89-56-622</v-list-tile-title>
+                      <v-list-tile-title>(+381) 063/89-56-622</v-list-tile-title>
                     </v-list-tile-content>
                   </v-list-tile>
                   <v-list-tile>
